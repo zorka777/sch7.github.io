@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Neaty HTML Web Template</title>
+
+    <!-- подключение стилей -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- гугл шрифт -->
+    <link rel="stylesheet" href="css/1.css">                                      
+    <link rel="stylesheet" href="css/2.css">                               
+    <link rel="stylesheet" href="css/3.css">                                  
+
+    
+</head>
+    <body>        
+        <div class="container">
+            <div class="row">
+                <div class="tm-left-right-container">
+                    <!-- левый столбец и меню -->
+                    <div class="tm-blue-bg tm-left-column">                        
+                        <div class="tm-logo-div text-xs-center">
+                            <img src="img/tm-neaty-logo.png" alt="Logo">
+                            <h1 class="tm-site-name">
+							"СРЕДНЯЯ ШКОЛА №7 г. Кричева"</h1>
+                        </div>
+                                                                
+                    </div> <!-- Left column: logo and menu -->
+                    
+                    <!-- Right column: content -->
+					
+                    <div class="tm-right-column">
+                        <br>
+						
+
+                        
+                            <section id="about" class="tm-section">
+                                <div class="row">                                                                
+                                    <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 push-lg-4 push-md-5">
+                                        <header>
+                                            <h2 class="tm-blue-text tm-section-title tm-margin-b-45">Гордимся что научили!</h2>
+                                        </header>
+
+                                        <p>Новая информационно-пропагандистская кампания Министерства по чрезвычайным ситуациям «Гордимся, что научили!» призвана мотивировать родителей обучать детей дошкольного и младшего школьного возраста правилам безопасности.
+Все родители радуются успехам своих детей в учебе, творчестве, спорте. Все мечтают о том, чтобы их дети покоряли новые вершины, добивались новых высот, становились успешными и счастливыми.</p>
+                                        </p>
+										<p>
+Но жизнь и здоровье ребенка – это самое главное достояние.  Сделать жизнь своих детей безопасной, уберечь, предупредить и защитить от любых бед, травм и невзгод – это забота родителей.</p>
+										<p>Научите своего ребенка правилам безопасности, научите быть осторожными и думающими, научите в любой опасной ситуации действовать, спасать себя и помогать людям, научите ценить свою жизнь.
+</P>
+										<p>
+И в этом вам поможет проект Министерства по чрезвычайным ситуациям «Гордимся, что научили!»: видео и аудиоролики, билборды, сувенирная продукция, плакаты, буклеты. Не останутся без внимания и дети: для них подготовлены красочные наклейки, закладки, прописи, брелоки, расписания.</p>
+										<p>Родители могут начать простые уроки безопасности со своими детьми прямо сейчас, используя раздел «МЧС родителям и педагогам» на сайте 112.by. Проверить и закрепить знания можно, пройдя тест для детей и родителей, перейдя по ссылке http://mchs.gov.by/test/. Ответив правильно на все вопросы, распечатывайте и делитесь в социальных сетях грамотой «Гений безопасности», где отмечены и родители, и дети.</p>
+										<a href="index.html" class="tm-button tm-button-wide">Назад</a> 
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 pull-lg-8 pull-md-7 tm-about-img-container">
+                                        <img src="img/neaty-02.jpg" alt="Image" class="img-fluid">    
+                                    </div>  
+                                </div>                            
+                            </section>  
+
+                           
+                
+        <!-- load JS files -->
+        <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+        <script src="js/jquery.magnific-popup.min.js"></script>     <!-- Magnific pop-up (http://dimsemenov.com/plugins/magnific-popup/) -->
+        <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+        <script>     
+       
+            $(document).ready(function(){
+
+                // Single page nav
+                $('.tm-main-nav').singlePageNav({
+                    'currentClass' : "active",
+                    offset : 20
+                });
+
+                // Magnific pop up
+                $('.tm-gallery-1').magnificPopup({
+                  delegate: 'a', // child items selector, by clicking on it popup will open
+                  type: 'image',
+                  gallery: {enabled:true}
+                  // other options
+                }); 
+
+                $('.tm-gallery-2').magnificPopup({
+                  delegate: 'a', // child items selector, by clicking on it popup will open
+                  type: 'image',
+                  gallery: {enabled:true}
+                  // other options
+                }); 
+
+                $('.tm-gallery-3').magnificPopup({
+                  delegate: 'a', // child items selector, by clicking on it popup will open
+                  type: 'image',
+                  gallery: {enabled:true}
+                  // other options
+                }); 
+
+                $('.tm-current-year').text(new Date().getFullYear());                
+            });
+        </script>             
+</body>
+</html>
